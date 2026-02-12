@@ -1,4 +1,4 @@
-package Serveur;
+package Server;
 
 import java.io.*;
 import java.net.*;
@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
  * Gère plusieurs clients simultanément et permet la communication entre tous
  */
 public class ChatServeur {
-    private static final int PORT = 5000;
+    private static final int PORT = 6000;
     private static Set<GestionnaireClient> clients = Collections.synchronizedSet(new HashSet<>());
     private static int compteurClients = 0;
     
